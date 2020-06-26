@@ -9,6 +9,6 @@ img.landscape {
 	max-width: 480px;
 }
 img.portrait {
-	max-height: 480px;
-	max-width: 240px;
+	max-height: 500px;
+	max-width: 300px;
 }
