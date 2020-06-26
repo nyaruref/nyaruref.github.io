@@ -1,3 +1,14 @@
 body {
 	font-family: verdana;
 }
+h1 {
+	text-align: center;
+}
+img.landscape {
+	max-height: 240px;
+	max-width: 480px;
+}
+img.portrait {
+	max-height: 480px;
+	max-width: 240px;
+}
