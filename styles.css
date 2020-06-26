@@ -12,3 +12,7 @@ img.portrait {
 	max-height: 500px;
 	max-width: 300px;
 }
+img.wide {
+	max-height: 240px;
+	max-width: 800px;
+}
