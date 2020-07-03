@@ -8,6 +8,10 @@ img.landscape {
 	max-height: 240px;
 	max-width: 480px;
 }
+img.landbig {
+	max-height: 480px;
+	max-width: 960px;
+}
 img.portrait {
 	max-height: 500px;
 	max-width: 300px;
