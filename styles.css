@@ -36,3 +36,66 @@ img.tall {
 	max-height: 800px;
 	max-width: 240px;
 }
+
+/* Fixed sidenav, full height */
+.sidenav {
+	height: 100%;
+	width: 20%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #202226;
+	overflow-x: scroll;
+	padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-button {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #979797;
+	display: block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-button:hover {
+	background-color: #42464E;
+	color: #f1f1f1;
+}
+
+/* Main content - small screen, no static sidebar */
+.small .main {}
+
+/* Main content - large screen, margins included for static sidebar	*/
+.big .main {
+	margin-left: 20%; /* Same as the width of the sidenav */
+	margin-right: 20%; /* Same as the width of the sidenav */
+	padding: 0px 20px;
+}
+
+/* Add an active class to the active dropdown button */
+.dropdown-active {
+	background-color: #2F7BE8;
+	color: white;
+}
+
+/* Dropdown container (hidden by default). */
+.dropdown-container {
+	display: none;
+	background-color: #292B30;
+	padding-left: 20px;
+}
+
+/* Style the caret down icon */
+.caret-down {
+	float: right;
+	padding-right: 8px;
+}
