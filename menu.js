@@ -1,6 +1,9 @@
 const smallScreen = window.innerWidth < 800 || window.innerHeight < 800;
 
-if(!smallScreen) {
+if(smallScreen) {
+	document.body.classList.add('small');
+}
+else {
 	document.body.classList.add('big');
 	
 	const headers = new Headers({'Content-Type': 'text/xml'});
@@ -19,9 +22,6 @@ if(!smallScreen) {
 		document.body.appendChild(menu);
 		animateMenu();
 	});
-}
-else {
-	document.body.classList.add('small');
 }
 
 function animateMenu() {
