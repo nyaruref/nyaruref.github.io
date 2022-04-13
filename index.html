@@ -8,6 +8,7 @@
 <script src="google_analytics.js"></script>
 </head>
 <body>
+<div class="main">
 <h1>NyaruReferences</h1>
 Welcome to NyaruReferences, a detailed guide to the numerous references in "Haiyore! Nyaruko-san" (這いよれ！ ニャル子さん).
 <h2>Table of contents:</h2>
@@ -48,6 +49,12 @@ Welcome to NyaruReferences, a detailed guide to the numerous references in "Haiy
 <a href="nyaruko_w/afterword_w.html">Afterword</a><br>
 <h3>Haiyore! Nyaruko-san F (Finale)</h3>
 <a href="nyaruko_f/nyaruko_f_ova.html">OVA References</a><br>
+</div>
+<script>
+const smallScreen = window.innerWidth < 800 || window.innerHeight < 800;
+if(smallScreen) { document.body.classList.add('small'); }
+else { document.body.classList.add('big'); }
+</script>
 <script src="link_fixer.js"></script>
 </body>
 </html>
