@@ -45,7 +45,7 @@ img.tall {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #202226;
+	background-color: #40444C;
 	overflow-x: scroll;
 	padding-top: 20px;
 }
@@ -55,7 +55,7 @@ img.tall {
 	padding: 6px 8px 6px 16px;
 	text-decoration: none;
 	font-size: 20px;
-	color: #979797;
+	color: #E1E1E1;
 	display: block;
 	border: none;
 	background: none;
@@ -67,7 +67,7 @@ img.tall {
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-button:hover {
-	background-color: #42464E;
+	background-color: #5C626E;
 	color: #f1f1f1;
 }
 
@@ -90,7 +90,7 @@ img.tall {
 /* Dropdown container (hidden by default). */
 .dropdown-container {
 	display: none;
-	background-color: #292B30;
+	background-color: #363940;
 	padding-left: 20px;
 }
 
