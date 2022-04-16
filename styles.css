@@ -87,6 +87,11 @@ a[target="_blank"]::after {
 	margin: 0 3px 0 5px;
 }
 
+.main {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 /* Fixed side-nav, full height */
 .side-nav {
 	height: 100%;
@@ -134,9 +139,6 @@ a[target="_blank"]::after {
 	}
 	
 	.menu-button {
-		/* REMOVE THIS WHEN FIXED */
-		display: none;
-		
 		z-index: 1;
 		position: fixed;
 		top: 20px;
