@@ -134,6 +134,9 @@ a[target="_blank"]::after {
 	}
 	
 	.menu-button {
+		/* REMOVE THIS WHEN FIXED */
+		display: none;
+		
 		z-index: 1;
 		position: fixed;
 		top: 20px;
