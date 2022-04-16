@@ -1,15 +1,10 @@
-const smallScreen = window.innerWidth < 800 || window.innerHeight < 800;
+fetchMenu();
 
-if(smallScreen) {
-	document.body.classList.add('small');
-}
-else {
-	document.body.classList.add('big');
-	
+function fetchMenu() {
+	const request = new Request('../menu.html');
 	const headers = new Headers({'Content-Type': 'text/xml'});
-	const myRequest = new Request('../menu.html');
 	
-	fetch(myRequest, {headers})
+	fetch(request, {headers})
 	.then((response) => {
 		if(!response.ok) {
 			throw new Error(`HTTP error! Status: ${ response.status }`);
@@ -17,18 +12,29 @@ else {
 		return response.text();
 	})
 	.then((response) => {
-		const menu = document.createElement('DIV');
-		menu.innerHTML = response;
-		document.body.appendChild(menu);
+		const sideMenu = document.createElement('DIV');
+		sideMenu.innerHTML = response;
+		sideMenu.classList.add("nav-wrapper");
+		document.body.appendChild(sideMenu);
+		
+		const menuButton = document.createElement('DIV');
+		menuButton.classList.add('menu-button');
+		
+		const isAprilFools = new Date().toISOString().substring(5, 10) == '04-01';
+		menuButton.innerHTML = isAprilFools ? "\uD83C\uDF54" : "\u2630";
+		menuButton.setAttribute("title", "Navigation");
+		document.body.appendChild(menuButton);
+	})
+	.then(() => {
 		animateMenu();
 	});
 }
 
 function animateMenu() {
-	var dropdown = document.getElementsByClassName("dropdown-button");
+	const dropdowns = document.getElementsByClassName("dropdown-button");
 	var i;
-	for (i = 0; i < dropdown.length; i++) {
-		dropdown[i].addEventListener("click", function() {
+	for (i = 0; i < dropdowns.length; i++) {
+		dropdowns[i].addEventListener("click", function() {
 			this.classList.toggle("dropdown-active");
 			var dropdownContent = this.nextElementSibling;
 			if (dropdownContent.style.display === "block") {
@@ -39,4 +45,20 @@ function animateMenu() {
 			}
 		});
 	}
+	
+	const menuButton = document.getElementsByClassName("menu-button");
+	menuButton[0].addEventListener("click", function() {
+		document.getElementsByClassName("nav-wrapper")[0].classList.toggle("menu-active");
+	});
+	
+	const navWrapper = document.getElementsByClassName("nav-wrapper");
+	navWrapper[0].addEventListener("click", function() {
+		navWrapper[0].classList.toggle("menu-active");
+	});
+	
+	const sideNav = document.getElementsByClassName("side-nav");
+	sideNav[0].addEventListener("click", function(event) {
+		event.stopPropagation();
+		return false;
+	});
 }
