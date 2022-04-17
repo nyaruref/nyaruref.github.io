@@ -99,6 +99,7 @@ a[target="_blank"]::after {
 	background-color: #40444C;
 	overflow-x: scroll;
 	padding-top: 20px;
+	box-sizing: border-box;
 }
 
 .nav-wrapper {
