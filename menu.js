@@ -27,6 +27,7 @@ function fetchMenu() {
 	})
 	.then(() => {
 		animateMenu();
+		preventPageScrollWhenMenuActive();
 	});
 }
 
@@ -61,4 +62,21 @@ function animateMenu() {
 		event.stopPropagation();
 		return false;
 	});
+}
+
+function preventPageScrollWhenMenuActive() {
+	const scrollHandler = function(event) {
+		console.log(event.type, event.target);
+		const isMenuActive = document.getElementsByClassName("nav-wrapper")[0].classList.contains("menu-active");
+		const isTargetWrapper = event.target.classList.contains("nav-wrapper");
+		if(isMenuActive && isTargetWrapper) {
+			event.preventDefault();
+		}
+		else {
+			event.stopPropagation();
+		}
+	};
+	document.body.addEventListener("scroll", scrollHandler, {passive:false});
+	document.body.addEventListener("touchmove", scrollHandler, {passive:false});
+	document.body.addEventListener("wheel", scrollHandler, {passive:false});
 }
