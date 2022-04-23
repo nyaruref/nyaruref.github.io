@@ -38,6 +38,46 @@ img.tall {
 	max-width: 240px;
 }
 
+.heroine-image-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.heroine-image {
+	display: flex;
+	width: 346px;
+	min-width: 320px;
+	max-width: 100%;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.heroine-image-container a {
+	text-align: center;
+	font-weight: bold;
+	background-color: #EEE;
+	padding: 13px;
+}
+
+.heroine-image-container img {
+	width: 100%;
+}
+
+@media (max-width: 1778px) {
+	.heroine-image-container {
+		flex-direction: column;
+		justify-content: unset;
+		align-items: center;
+	}
+	
+	.heroine-image {
+		width: 500px;
+		max-width: 100%;
+	}
+}
+
 .side-nav h2 {
 	margin: 6px 0 10px 16px;
 	color: #E1E1E1;
@@ -64,6 +104,11 @@ img.tall {
 	color: #f1f1f1;
 }
 
+.dropdown-button {
+	position: relative;
+	padding-right: 30px;
+}
+
 /* Add an active class to the active dropdown button */
 .dropdown-active {
 	background-color: #1E71E6;
@@ -79,8 +124,10 @@ img.tall {
 
 /* Style the caret down icon */
 .caret-down {
-	float: right;
 	padding-right: 8px;
+	position: absolute;
+	top: 6px;
+	right: 0;
 }
 
 a[target="_blank"]::after {
