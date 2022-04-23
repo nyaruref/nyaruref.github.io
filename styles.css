@@ -43,15 +43,7 @@ img.tall {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-}
-
-.heroine-image {
-	display: flex;
-	width: 346px;
-	min-width: 320px;
-	max-width: 100%;
-	margin-top: 20px;
-	overflow: hidden;
+	margin-bottom: 20px;
 }
 
 .heroine-image-container a {
@@ -63,6 +55,19 @@ img.tall {
 
 .heroine-image-container img {
 	width: 100%;
+}
+
+.heroine-image {
+	display: flex;
+	width: 346px;
+	min-width: 320px;
+	max-width: 100%;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.heroine-image:hover {
+	box-shadow: 0 0 5px 1px #888;
 }
 
 @media (max-width: 1778px) {
