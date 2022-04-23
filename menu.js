@@ -66,7 +66,6 @@ function animateMenu() {
 
 function preventPageScrollWhenMenuActive() {
 	const scrollHandler = function(event) {
-		console.log(event.type, event.target);
 		const isMenuActive = document.getElementsByClassName("nav-wrapper")[0].classList.contains("menu-active");
 		const isTargetWrapper = event.target.classList.contains("nav-wrapper");
 		if(isMenuActive && isTargetWrapper) {
