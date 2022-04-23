@@ -38,6 +38,29 @@ img.tall {
 	max-width: 240px;
 }
 
+.image-text-row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.image-cell {
+	width: 320px;
+	display: inline-block;
+}
+
+.image-cell img {
+	width: 100%;
+}
+
+.text-cell {
+	width: 40%;
+	max-width: 500px;
+	display: inline-block;
+	padding-left: 30px;
+}
+
 .heroine-image-container {
 	width: 100%;
 	display: flex;
@@ -83,6 +106,24 @@ img.tall {
 	}
 }
 
+.nav-wrapper {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+/* Fixed side-nav, full height */
+.side-nav {
+	height: 100%;
+	background-color: #40444C;
+	overflow-x: hidden;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+
 .side-nav h2 {
 	margin: 6px 0 10px 16px;
 	color: #E1E1E1;
@@ -125,6 +166,7 @@ img.tall {
 	display: none;
 	background-color: #363940;
 	padding-left: 20px;
+	padding-right: 16px;
 }
 
 /* Style the caret down icon */
@@ -143,24 +185,6 @@ a[target="_blank"]::after {
 .main {
 	max-width: 100%;
 	overflow-x: hidden;
-}
-
-/* Fixed side-nav, full height */
-.side-nav {
-	height: 100%;
-	background-color: #40444C;
-	overflow-x: scroll;
-	padding-top: 20px;
-	box-sizing: border-box;
-}
-
-.nav-wrapper {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 2;
 }
 
 @media (max-width: 800px) {
@@ -211,7 +235,7 @@ a[target="_blank"]::after {
 
 @media (min-width: 801px) {
 	.nav-wrapper {
-		width: 20%;
+		width: max(20%, 170px);
 	}
 	
 	.side-nav {
@@ -224,8 +248,8 @@ a[target="_blank"]::after {
 	
 	/* Main content - large screen, margins included for static sidebar	*/
 	.main {
-		margin-left: 20%; /* Same as the width of the side-nav */
-		margin-right: 20%; /* Same as the width of the side-nav */
+		margin-left: max(20%, 170px); /* Same as the width of the side-nav */
+		margin-right: max(20%, 170px); /* Same as the width of the side-nav */
 		padding: 0px 20px;
 	}
 }
