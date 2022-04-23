@@ -57,8 +57,13 @@ img.tall {
 .text-cell {
 	width: 40%;
 	max-width: 500px;
-	display: inline-block;
+	display: flex;
 	padding-left: 30px;
+	align-items: center;
+}
+
+.text-cell .text-block {
+	margin: 16px 0;
 }
 
 .heroine-image-container {
