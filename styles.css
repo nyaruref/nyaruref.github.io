@@ -72,6 +72,8 @@ img.tall {
 	justify-content: space-between;
 	flex-direction: row;
 	margin-bottom: 20px;
+	padding: 0 5px;
+	box-sizing: border-box;
 }
 
 .heroine-image-container a {
