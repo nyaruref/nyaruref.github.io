@@ -38,6 +38,10 @@ img.tall {
 	max-width: 240px;
 }
 
+.top-image {
+	text-align: center;
+}
+
 .image-text-row {
 	width: 100%;
 	display: flex;
