@@ -7,7 +7,7 @@ h1 {
 }
 img.landscape {
 	max-height: 240px;
-	max-width: 480px;
+	max-width: 100%;/*480px;*/
 }
 img.landmed {
 	max-height: 360px;
@@ -27,11 +27,11 @@ img.portmed {
 }
 img.portbig {
 	max-height: 960px;
-	max-width: 480px;
+	max-width: 100%;/*480px;*/
 }
 img.wide {
-	max-height: 240px;
-	max-width: 800px;
+	max-height: 200px;
+	max-width: 100%;/*800px;*/
 }
 img.tall {
 	max-height: 800px;
