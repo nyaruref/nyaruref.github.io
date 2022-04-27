@@ -7,31 +7,31 @@ h1 {
 }
 img.landscape {
 	max-height: 240px;
-	max-width: 100%;/*480px;*/
+	max-width: 100%;
 }
 img.landmed {
 	max-height: 360px;
-	max-width: 100%;/*720px;*/
+	max-width: 100%;
 }
 img.landbig {
 	max-height: 480px;
-	max-width: 100%;/*960px;*/
+	max-width: 100%;
 }
 img.portrait {
-	max-height: 480px;
-	max-width: 240px;
+	max-height: 360px;
+	max-width: 100%;
 }
 img.portmed {
-	max-height: 720px;
-	max-width: 100%;/*360px;*/
+	max-height: 480px;
+	max-width: 100%;
 }
 img.portbig {
-	max-height: 960px;
-	max-width: 100%;/*480px;*/
+	max-height: 600px;
+	max-width: 100%;
 }
 img.wide {
-	max-height: 200px;
-	max-width: 100%;/*800px;*/
+	max-height: 180px;
+	max-width: 100%;
 }
 img.tall {
 	max-height: 800px;
