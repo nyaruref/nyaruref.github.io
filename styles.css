@@ -23,7 +23,7 @@ img.portrait {
 }
 img.portmed {
 	max-height: 720px;
-	max-width: 360px;
+	max-width: 100%;/*360px;*/
 }
 img.portbig {
 	max-height: 960px;
