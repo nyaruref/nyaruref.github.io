@@ -179,7 +179,7 @@ a[target="_blank"]::after {
 
 /* Style the side-nav links and the dropdown button */
 .side-nav a, .dropdown-button {
-	padding: 6px 8px 6px 16px;
+	padding: 6px 28px 6px 16px;
 	text-decoration: none;
 	font-size: 20px;
 	color: #E1E1E1;
