@@ -128,7 +128,7 @@ a[target="_blank"]::after {
 }
 
 /* Add an active class to the active dropdown button */
-.dropdown-active {
+.dropdown-button.dropdown-active, .dropdown-button.dropdown-active:hover {
 	background-color: #1E71E6;
 	color: white;
 }
